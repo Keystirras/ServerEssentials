@@ -1,0 +1,71 @@
+################################################
+#######                                  #######
+#######        Server Essentials         #######
+#######                                  #######
+#######      Created by Keystirras       #######
+#######           Version 1.0            #######
+#######                                  #######
+#######                                  #######
+################################################
+
+
+#######################################################################################
+#### This section is for the /apply command. Note: Color codes are supported here. ####
+#######################################################################################
+
+ApplyStaff: "&4ServerName &7&l>> &6To apply for Staff follow this link: &chttp://linkhere.com &6You must be at least 11 years old and spend a minimum of 2 weeks on the server."
+  
+ApplyYoutuber: "&4ServerName &7&l>> &6To apply for Youtuber follow this link: &chttp://linkhere.com &6You must have at least 250 Subs and 2 videos of the servers!"
+  
+ApplyTwitcher: "&4ServerName &7&l>> &6To apply for Twitcher follow this link: &chttp://linkhere.com &6You must have at least 100 followers."
+  
+ApplyBuilder: "&4ServerName &7&l>> &6To apply for Builder follow this link: &chttp://linkhere.com &6You must be at least 11 years old, be able to work in a team, have skype so we can add you to the chat, and proof of your builds."
+  
+ApplyAlone: "&4ServerName &7&l>> &cYou must select what you're applying for! &6Staff, Youtuber, Twitcher &cor &6Builder &care the options."
+  
+#######################################################################################################################
+####This section is for /links and /website, /twitter, /youtube, /facebook   Note: Color codes are supported here. ####
+#######################################################################################################################
+
+#Link"s is the top line when someone types the command /links or /link
+
+LinksTitle: "                          &aServer Name Here                         "
+
+Website: "&4&lServerName &7&l>> &6&lOur server website is http://ServerWebsite"
+
+Youtube: "&4&lServerName &7&l>> &6&lThe server's youtube channel is http://youtube.com/user/youruserhere"
+
+Twitter: "&4&lServerName &7&l>> &6&lThe server's twitter is http://twitter.com/twitternamehere"
+
+Facebook: "&4&lServerName &7&l>> &6&lThe server's facebook is https://www.facebook.com/ServerName/"
+
+Steam: "&4&lServerName &7&l>> &6&lThe server's steam is http://steamcommunity.com/groups/groupnamehere/"
+
+##############################################################################################################
+####     Staff Chat Prefix's How its displayed when showed in chat. Note: Color Codes are supported!      ####
+####                  Note: StaffChatNames section is for the Color of player's name.                     ####
+####        Note: If you want your name to be a different color, define it at the end of the prefix.      ####
+####               Note: StaffChatColor etc. is what color the actual message will be.                    ####
+##############################################################################################################
+
+StaffChatPrefix: "&8[&eStaffChat&8] &6"
+
+OwnerChatPrefix: "&c[&4OwnerChat&c] &c"
+
+BuilderChatPrefix: "&3[&bBuilderChat&3] &3"
+
+StaffChatColor: "&6"
+
+OwnerChatColor: "&c"
+
+BuilderChatColor: "&b"
+
+####################################################################################################################
+####                                             /kill settings                                                 ####
+#### When typing message your name will always come first, then the messages below, then the targets name after.####
+####################################################################################################################
+
+KillMessage:
+  - "&chas slaughtered"
+  - "&cevaperated"
+  - "&csent a bunch of cows to take care of"

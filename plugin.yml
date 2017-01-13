@@ -1,0 +1,83 @@
+name: ServerEssentials
+main: com.wifld.tfoc.Main
+version: 1.0
+author: Keystirras
+
+
+commands:
+  apply:
+    description: List ways to apply for ranks.
+    aliases: [app, apl, ap]
+  staffchat:
+    description: Talk amongst the staff members.
+    usage: /<command> <message>
+    aliases: [sc, s]
+  ownerchat:
+    description: Talk amongst the owners.
+    usage: /<command> <message>
+    aliases: [oc, o]
+  builderchat:
+    description: Talk to your fellow builders.
+    usage: /<command> <message>
+    aliases: [bc, b]
+  colors:
+    description: Lists all the color codes.
+    usage: /<command>
+    aliases: [color, colour]
+  formats:
+    description: Lists all the chat formats.
+    usage: /<command>
+    aliases: [format, form]
+  facebook:
+    description: Displays the servers Facebook page.
+    usage: /<command>
+    aliases: [fb]
+  website:
+    description: Displays the servers website.
+    usage: /<command>
+    aliases: [web]
+  youtube:
+    description: Displays the servers youtube page.
+    usage: /<command>
+    aliases: [yt, yout]
+  links:
+    description: Displays all the websites links
+    usage: /<command>
+    aliases: [link]
+  twitter:
+    description: Displays the servers twitter page.
+    usage: /<command>
+  steam:
+    description: Displays the servers steam page.
+    usage: /<command>
+  serveressentials:
+    description: Displays the basic plugin info
+    usage: /<command>
+  kill:
+    desciprion: Kills the specified player.
+    usage: /<command>
+  kiss:
+    description: Kiss the specified player.
+    usage: /<command>
+  facedesk:
+    description: Slam your face into a desk!
+    usage: /<command>
+  facepalm:
+    description: Slam your face into your palm!
+    usage: /<command>
+  hug:
+    description: Hug a player!
+    usage: /<command>
+  poke:
+    description: Poke a player!
+    usage: /<command>
+  antipoke:
+    description: Break a player's finger!
+    usage: /<command>
+  slap:
+    description: Slap a player into the air!
+    usage: /<command>
+  punch:
+    description: Punch a player!
+    usage: </command>
+  
