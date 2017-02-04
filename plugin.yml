@@ -80,4 +80,6 @@ commands:
   punch:
     description: Punch a player!
     usage: </command>
-  
+  alert:
+    description: Alert a message to the server
+    usage: </command>
