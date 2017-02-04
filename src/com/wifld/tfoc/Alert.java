@@ -27,7 +27,7 @@ public class Alert implements CommandExecutor{
 		            sender.sendMessage(ChatColor.translateAlternateColorCodes('&', "Alert a message to other players. /alert <message>"));
 		          return true;
 		        }
-		        Bukkit.broadcastMessage(ChatColor.translateAlternateColorCodes('&', alertPrefix + message));
+		        Bukkit.broadcastMessage(ChatColor.translateAlternateColorCodes('&', alertPrefix + " " + message));
 		        return true;
 		      }
 		      sender.sendMessage(ChatColor.RED + "You cannot use that command.");
