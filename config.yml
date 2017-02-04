@@ -75,3 +75,37 @@ KillMessage:
 ####################################################################################################################
 
 AlertPrefix: "&c[&6Alert&c] "
+
+####################################################################################################################
+####                                             Action  settings                                               ####
+#### Note: Kiss, Hug, Poke, and AntiPoke involves two players so the message is inbetween the 2 player names    ####
+#### Color codes are allowed, and it goes by the player's Display name, not their real IGN!                     ####
+#### All of these support multiple messages that will switch at random!                                         ####
+#### Example: PlayerOne (message that you configure) PlayerTwo                                                  ####
+####################################################################################################################
+
+ActionsPrefix: "&8[&cC&9r&2a&5f&6t&f-&1O&f-&bBot&8]"
+
+ActionsKiss:
+  - "&dkissed"
+  - "&dsmooched"
+  
+ActionsFacedesk:
+  - "&6&lslammed their face so hard an earthquake started!"
+  - "&6&lslammed their face so hard they broke their nose!"
+  
+ActionsFacepalm:
+  - "&cfacepalmed so hard they broke their hands!"
+  - "&cfacepalmed so hard their face is red!"
+  
+ActionsHug:
+  - "&dhugged"
+  - "&dcuddled"
+
+ActionsPoke:
+  - "&apoked"
+  - "&ais trying to poke"
+  
+ActionsAntiPoke:
+  - "&adenied"
+  - "&arejected"
