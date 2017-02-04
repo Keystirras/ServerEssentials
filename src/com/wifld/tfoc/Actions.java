@@ -17,53 +17,80 @@ implements CommandExecutor
     public boolean onCommand(CommandSender sender, Command cmd, String label, String [] args) {
         Player p = (Player) sender;
         Player t = Bukkit.getServer().getPlayer(args[0]);
+        
+        List<String> actionsPrefix = Main.getPlugin().getConfig().getStringList("ActionsPrefix");
+        List<String> actionsFacedesk = Main.getPlugin().getConfig().getStringList("ActionsFacedesk");
+        List<String> actionsKiss = Main.getPlugin().getConfig().getStringList("ActionsKiss");
+        List<String> actionsFacepalm = Main.getPlugin().getConfig().getStringList("ActionsFacepalm");
+        List<String> actionsHug = Main.getPlugin().getConfig().getStringList("ActionsHug");
+        List<String> actionsPoke = Main.getPlugin().getConfig().getStringList("ActionsPoke");
+        List<String> actionsAntiPoke = Main.getPlugin().getConfig().getStringList("ActionsAntiPoke");
+        
         if (cmd.getName().equalsIgnoreCase("kiss")) {
+            if (!sender.hasPermission("serveressentials.kiss")) {
+                sender.sendMessage(ChatColor.RED + "You do not have permission to use this command!");
+            }
         	if (args.length == 0) {
         		sender.sendMessage(ChatColor.RED + "Could not find the player specified!");
         		return true;
         	}
-            Bukkit.getServer().broadcastMessage(ChatColor.DARK_GRAY + "[" + ChatColor.RED + "C" + ChatColor.BLUE + "r" + ChatColor.GREEN + "a" + ChatColor.DARK_PURPLE + "f" + ChatColor.GOLD + "t" + ChatColor.WHITE + "-" + ChatColor.DARK_BLUE + "O" + ChatColor.WHITE + "-" + ChatColor.AQUA + "Bot" + ChatColor.DARK_GRAY + "] " );
+            Bukkit.getServer().broadcastMessage(ChatColor.translateAlternateColorCodes('&', actionsPrefix + " " + p.getDisplayName + " " + actionsKiss + " " + t.getDisplayName));
 			
             return true;
         }
         if (cmd.getName().equalsIgnoreCase("facedesk")) {
+            if (!sender.hasPermission("serveressentials.facedesk")) {
+                sender.sendMessage(ChatColor.RED + "You do not have permission to use this command!");
+            }
         	if (args.length == 0) {
         		sender.sendMessage(ChatColor.RED + "Could not find the player specified!");
         		return true;
         	}
-            Bukkit.getServer().broadcastMessage(ChatColor.DARK_GRAY + "[" + ChatColor.RED + "C" + ChatColor.BLUE + "r" + ChatColor.GREEN + "a" + ChatColor.DARK_PURPLE + "f" + ChatColor.GOLD + "t" + ChatColor.WHITE + "-" + ChatColor.DARK_BLUE + "O" + ChatColor.WHITE + "-" + ChatColor.AQUA + "Bot" + ChatColor.DARK_GRAY + "] " + ChatColor.YELLOW + p.getDisplayName() + " facedesked so hard there was an earthquake in Haiti.");
+        	Bukkit.getServer().broadcastMessage(ChatColor.translateAlternateColorCodes('&', actionsPrefix + " " + p.getDisplayName + " " + actionsFacedesk));
             return true;
         }
         if (cmd.getName().equalsIgnoreCase("facepalm")) {
+            if (!sender.hasPermission("serveressentials.facepalm")) {
+                sender.sendMessage(ChatColor.RED + "You do not have permission to use this command!");
+            }
         	if (args.length == 0) {
         		sender.sendMessage(ChatColor.RED + "Could not find the player specified!");
         		return true;
         	}
-            Bukkit.getServer().broadcastMessage(ChatColor.DARK_GRAY + "[" + ChatColor.RED + "C" + ChatColor.BLUE + "r" + ChatColor.GREEN + "a" + ChatColor.DARK_PURPLE + "f" + ChatColor.GOLD + "t" + ChatColor.WHITE + "-" + ChatColor.DARK_BLUE + "O" + ChatColor.WHITE + "-" + ChatColor.AQUA + "Bot" + ChatColor.DARK_GRAY + "] " + ChatColor.YELLOW + p.getDisplayName() + " facepalmed so hard they broke their hand!");
+            Bukkit.getServer().broadcastMessage(ChatColor.TranslateAlternateColorCodes('&', actionsPrefix + " " + p.getDisplayName + " " + actionsFacepalm));
             return true;
         }
         if (cmd.getName().equalsIgnoreCase("hug")) {
+            if (!sender.hasPermission("serveressentials.hug")) {
+                sender.sendMessage(ChatColor.RED + "You do not have permission to use this command!");
+            }
         	if (args.length == 0) {
         		sender.sendMessage(ChatColor.RED + "Could not find the player specified!");
         		return true;
         	}
-            Bukkit.getServer().broadcastMessage(ChatColor.DARK_GRAY + "[" + ChatColor.RED + "C" + ChatColor.BLUE + "r" + ChatColor.GREEN + "a" + ChatColor.DARK_PURPLE + "f" + ChatColor.GOLD + "t" + ChatColor.WHITE + "-" + ChatColor.DARK_BLUE + "O" + ChatColor.WHITE + "-" + ChatColor.AQUA + "Bot" + ChatColor.DARK_GRAY + "] " + ChatColor.YELLOW + p.getDisplayName() + " hugged " + t.getDisplayName());
+        	Bukkit.getServer().broadcastMessage(ChatColor.TranslateAlternateColorCodes('&', actionsPrefix + " " + p.getDisplayName + " " + actionsHug + " " + t.getDisplayName));
             return true;
         }
         if (cmd.getName().equalsIgnoreCase("poke")) {
+            if (!sender.hasPermission("serveressentials.poke")) {
+                sender.sendMessage(ChatColor.RED + "You do not have permission to use this command!");
+            }
         	if (args.length == 0) {
         		sender.sendMessage(ChatColor.RED + "Could not find the player specified!");
         		return true;
         	}
-            Bukkit.getServer().broadcastMessage(ChatColor.DARK_GRAY + "[" + ChatColor.RED + "C" + ChatColor.BLUE + "r" + ChatColor.GREEN + "a" + ChatColor.DARK_PURPLE + "f" + ChatColor.GOLD + "t" + ChatColor.WHITE + "-" + ChatColor.DARK_BLUE + "O" + ChatColor.WHITE + "-" + ChatColor.AQUA + "Bot" + ChatColor.DARK_GRAY + "] " + ChatColor.YELLOW + t.getDisplayName() + " was poked by " + p.getDisplayName());
+        	Bukkit.getServer().broadcastMessage(ChatColor.TranslateAlternateColorCodes('&', actionsPrefix + " " + p.getDisplayName + " " + actionsPoke + " " + t.getDisplayName));
             return true;
         }
         if (cmd.getName().equalsIgnoreCase("antipoke")) {
+            if (!sender.hasPermission("serveressentials.antipoke")) {
+                sender.sendMessage(ChatColor.RED + "You do not have permission to use this command!");
+            }
         	if (args.length == 0) {
         		sender.sendMessage(ChatColor.RED + "Could not find the player specified!");
         		return true;
         	}
-            Bukkit.getServer().broadcastMessage(ChatColor.DARK_GRAY + "[" + ChatColor.RED + "C" + ChatColor.BLUE + "r" + ChatColor.GREEN + "a" + ChatColor.DARK_PURPLE + "f" + ChatColor.GOLD + "t" + ChatColor.WHITE + "-" + ChatColor.DARK_BLUE + "O" + ChatColor.WHITE + "-" + ChatColor.AQUA + "Bot" + ChatColor.DARK_GRAY + "] " + ChatColor.YELLOW + p.getDisplayName() + " broke " + t.getDisplayName() + "'s finger!" );
+        	Bukkit.getServer().broadcastMessage(ChatColor.TranslateAlternateColorCodes('&', actionsPrefix + " " + p.getDisplayName + " " + actionsAntiPoke + " " + t.getDisplayName));" );
             return true;
         }  
         if (cmd.getName().equalsIgnoreCase("slap")){
