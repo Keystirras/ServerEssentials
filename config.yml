@@ -108,4 +108,4 @@ ActionsPoke:
   
 ActionsAntiPoke:
   - "&adenied"
-  - "&arejected"
+  - "&arejected the poke from"
