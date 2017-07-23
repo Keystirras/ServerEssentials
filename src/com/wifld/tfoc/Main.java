@@ -39,7 +39,7 @@ public final class Main
     getCommand("facebook").setExecutor(new Links());
     getCommand("steam").setExecutor(new Links());
     getCommand("serveressentials").setExecutor(new ServerEssentials());
-    getCommand("kill").setExecutor(new Kill());
+
     getCommand("alert").setExecutor(new Alert());
     if (!setupEconomy() ) {
         Bukkit.getServer().getLogger().severe(String.format("[%s] - Disabled due to no Vault dependency found!", getDescription().getName()));
