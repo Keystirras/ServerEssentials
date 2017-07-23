@@ -53,9 +53,6 @@ commands:
   serveressentials:
     description: Displays the basic plugin info
     usage: /<command>
-  kill:
-    desciprion: Kills the specified player.
-    usage: /<command>
   kiss:
     description: Kiss the specified player.
     usage: /<command>
